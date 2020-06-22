@@ -36,13 +36,18 @@ def search_array(x, y):
     :parameter y: the item to be searched for in the list
     :returns: the index of the item in the list, if it is in the list; otherwise -1 if it isn't.
     """
-    """
     try:
-        z = x.index(y)
+        my_search_array = arr.array('i', x)
+    except ValueError:
+        raise ValueError from None
+    my_list_search_array = []
+    for a in my_search_array:
+        my_list_search_array.append(a)
+    try:
+        z = my_list_search_array.index(y)
     except ValueError:
         z = -1
     return z
-    """
     pass
 
 
@@ -76,5 +81,7 @@ def get_input():
 
 
 if __name__ == '__main__':
-    x = make_list()
-    sort_array(x)
+    # x = make_list()
+    # sort_array(x)
+    y = make_list()
+    search_array(y, 15)

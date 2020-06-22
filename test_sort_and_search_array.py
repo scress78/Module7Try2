@@ -17,15 +17,13 @@ class MyTestCase(unittest.TestCase):
         """Test search_list function for valid output of item not in list"""
         self.assertEqual(sort_array([6, 4, 9, 10]), [4, 6, 9, 10])
 
-    #def test_search_list_found(self):
+    def test_search_list_found(self):
         """Test search_list function for valid output of item in list"""
-     #   self.assertEqual(search_array([6, 4, 9, 10], 9), 2)
+        self.assertEqual(search_array([6, 4, 9, 10], 9), 2)
 
-    #def test_search_array_not_found(self):
+    def test_search_array_not_found(self):
         """Test search_list function for valid output of item not in list"""
-    #    self.assertEqual(search_array([6, 4, 9, 10], 15), -1)
-
-
+        self.assertEqual(search_array([6, 4, 9, 10], 15), -1)
 
 
 
